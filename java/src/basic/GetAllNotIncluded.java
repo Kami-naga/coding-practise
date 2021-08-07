@@ -39,7 +39,7 @@ public class GetAllNotIncluded {
     }
 
     public static ArrayList<Integer> solution2(int[] sorted, int[] unsorted) {
-        //O(MlogN)
+        //O(MlogN), N large, this one better
         ArrayList<Integer> result = new ArrayList<>();
         for(int i: unsorted){
             int L = 0;
@@ -64,7 +64,7 @@ public class GetAllNotIncluded {
     }
 
     public static List<Integer> solution3(int[] sorted, int[] unsorted) {
-        //O(MlogM)+O(N+M)
+        //O(MlogM)+O(N+M), M large, this one better
         Arrays.sort(unsorted);
         int n = 0, m = 0;
         ArrayList<Integer> result = new ArrayList<>();
