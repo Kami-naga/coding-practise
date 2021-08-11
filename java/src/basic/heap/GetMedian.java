@@ -1,6 +1,5 @@
-package basic;
+package basic.heap;
 
-import java.util.Comparator;
 import java.util.PriorityQueue;
 //数据流实时获取中位数
 public class GetMedian {

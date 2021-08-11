@@ -1,4 +1,4 @@
-package basic;
+package basic.heap;
 
 public class HeapSort {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package basic;
+package basic.merge;
 
 public class ReversePairs {
     public static void main(String[] args) {

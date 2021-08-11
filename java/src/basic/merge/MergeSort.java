@@ -1,4 +1,4 @@
-package basic;
+package basic.merge;
 
 public class MergeSort {
     public static void main(String[] args) {

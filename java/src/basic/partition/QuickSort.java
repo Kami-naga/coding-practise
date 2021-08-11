@@ -1,4 +1,4 @@
-package basic;
+package basic.partition;
 
 //时间复杂度O(nlogn),分得很不平均时有最差情况O(N^2)
 //空间复杂度O(logn)->记录分割点，分得很不平均时有最差情况O(N)

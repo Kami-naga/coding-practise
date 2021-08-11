@@ -1,4 +1,4 @@
-package basic;
+package basic.bucket;
 
 
 //桶排序之计数排序 counting sort

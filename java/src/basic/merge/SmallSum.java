@@ -1,4 +1,4 @@
-package basic;
+package basic.merge;
 
 //input: [1,3,5,2,7]
 //1<3, 1

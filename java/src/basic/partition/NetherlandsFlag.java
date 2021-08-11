@@ -1,4 +1,4 @@
-package basic;
+package basic.partition;
 
 public class NetherlandsFlag {
     public static void main(String[] args) {
