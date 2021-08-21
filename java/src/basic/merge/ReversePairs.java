@@ -32,7 +32,7 @@ public class ReversePairs {
         while(pl <= M && pr <= R){
             if(a[pl] > a[pr]){
                 for(int i=pr; i<=R; i++){
-                    //注意此处是找逆序对，遍历右侧数组，因此下方38行排序也应该相对应为从大到小
+                    //注意此处是找逆序对，遍历右侧数组，因此下方39行排序也应该相对应为从大到小
                     System.out.println("pair: "+a[pl]+" "+a[i]);
                 }
             }
