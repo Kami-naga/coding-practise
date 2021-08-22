@@ -14,15 +14,27 @@ public class HeapSort {
             return;
         }
 
-        for(int i = 0; i < a.length; i++){
-            heapInsert(a, i);
+        //O(nlogn)建堆
+        //若他是一个元素一个元素给这样的，那只能这样
+        //但如果他是一下子把所有元素给你（像heapsort这样直接丢你一个数组），那用下边方法:从下而上heapify更快
+//        for(int i = 0; i < a.length; i++){ //O(n)
+//            heapInsert(a, i);  //O(logn)
+//        }
+
+        for(int i = a.length - 1;i >= 0; i--){ //O(n)
+            //T(n) = n/2*1+n/4*2+n/8*3+...
+            //2T(n) = n   +n/2*2+n/4*3+...
+            //错项相减
+            //T(n) = n + n/2 + n/4 + n/8 + .... = n * (1+1/2+1/4+1/8+...)
+            //所以是O(n)
+            heapify(a, i, a.length);
         }
 
         int heapSize = a.length;
         swap(a, 0, --heapSize);
-        while(heapSize > 0){
-            heapify(a, 0, heapSize);
-            swap(a, 0, --heapSize);
+        while(heapSize > 0){ //O(n)
+            heapify(a, 0, heapSize); //O(logn)
+            swap(a, 0, --heapSize);  //O(1)
         }
     }
 
